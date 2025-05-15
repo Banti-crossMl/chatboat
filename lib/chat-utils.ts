@@ -51,7 +51,7 @@ export const initialMessage: Message = {
   id: "welcome",
   role: "assistant",
   content:
-    "👋 Hi there! I'm your Smart FAQ Bot. I can answer questions about the  stock markit, based on our internal documentation. How can I help you today?",
+    "👋 Hi there! I'm your Smart FAQ Bot. I can answer questions about the  stock markit, based on your documentation. How can I help you today?",
   timestamp: new Date(),
 };
 

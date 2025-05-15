@@ -11,6 +11,7 @@ import { ChatMessage } from "./chat-message";
 import { ChatInput } from "./chat-input";
 import { Button } from "@/components/ui/button";
 import { ArrowDownCircle, Bot, X } from "lucide-react";
+import { PdfUploader } from "./PdfUploader";
 import { cn } from "@/lib/utils";
 
 export function ChatUI() {
@@ -89,8 +90,9 @@ export function ChatUI() {
       {/* Chat header */}
       <div className="flex items-center justify-between border-b px-4 py-2">
         <div className="flex items-center gap-2">
-          <Bot className="h-5 w-5 text-primary" />
-          <h2 className="font-semibold">Smart FAQ Bot</h2>
+          {/* <Bot className="h-5 w-5 text-primary" /> */}
+          {/* <h2 className="font-semibold">Smart FAQ Bot</h2> */}
+          <PdfUploader />
         </div>
         <Button
           variant="ghost"
@@ -102,6 +104,7 @@ export function ChatUI() {
           <span className="sr-only">Clear chat</span>
         </Button>
       </div>
+      {/* PDF Upload */}
 
       {/* Messages container */}
       <div ref={chatContainerRef} className="flex-1 overflow-y-auto px-4 py-4">
